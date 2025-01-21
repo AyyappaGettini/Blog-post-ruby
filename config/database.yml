@@ -37,9 +37,11 @@ development:
   username: postgres
   password: root
 
-# test:
-#   <<: *default
-#   database: YOUR_APP_NAME_HERE_test
+test:
+  <<: *default
+  database: blog_test
+  username: postgres
+  password: root
 # ​
 # production:
 #   <<: *default
