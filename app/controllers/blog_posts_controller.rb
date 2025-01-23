@@ -5,6 +5,7 @@ class BlogPostsController<ApplicationController
 
   def index
     @blog_posts=user_signed_in? ? BlogPost.sorted : BlogPost.published.sorted
+    @pagy, @blog_posts=pagy(@blog_posts)
   end
 
   def show
@@ -54,7 +55,7 @@ class BlogPostsController<ApplicationController
 
   private
   def blog_posts_params
-    params.require(:blog_post).permit(:title,:body,:published_at)
+    params.require(:blog_post).permit(:title,:content,:published_at)
   end
 
 end
