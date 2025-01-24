@@ -13,6 +13,6 @@ user.update!(
    password_confirmation: "vijay@123"
 )
 
-# 100.times do |i|
-#   BlogPost.create title: "Blog Post #{i}", content: "Hello World",published_at: Time.current
-# end
+100.times do |i|
+  BlogPost.where(title: "Blog Post #{i}").delete_all
+end

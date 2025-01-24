@@ -10,7 +10,7 @@
         <%=posts.content%>
     </div>
 <%end%>
-<% if @pagy.count>@pagy.items%>
+<% if @pagy.pages > 1 %>
     <div class="my-16">
         <%== pagy_nav(@pagy) %>
     </div>
