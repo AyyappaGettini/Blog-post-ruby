@@ -83,3 +83,7 @@ gem "materialize", "~> 0.2.6"
 
 gem 'ruby-vips', '~> 2.2', '>= 2.2.2'
 gem "pagy", "~> 9.3"
+
+gem "mutex_m", "~> 0.3.0"
+
+gem "bigdecimal", "~> 3.1"

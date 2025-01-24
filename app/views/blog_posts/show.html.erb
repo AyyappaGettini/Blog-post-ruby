@@ -2,5 +2,6 @@
 <h1> Show BlogPost</h1>
 <div>
     <h1><%=@blog_post.title%></h1>
+    <%= image_tag @blog_post.cover_image if @blog_post.cover_image.present? %>
     <%=@blog_post.content%>
 </div>
